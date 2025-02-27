@@ -1,0 +1,17 @@
+<!-- By Mohammad Alomar, 27 Feb 2025. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>settings</title>
+    <script defer src="{{url_for('static',filename='settings.js')}}"></script> 
+</head>
+<body>
+    <input type="button" value="auto group" onclick="autoGroup()">
+    <input type="button" value="add to whitelist" onclick="whitelist('/whitelist_append', 'POST')">
+    <input type="button" value="remove from whitelist" onclick="whitelist('/whitelist_remove', 'DELETE')">
+    <input type="button" value="export project" onclick="exportProject()">
+    <input type="file" value="import crs" onchange="importCrs()">
+</body>
+</html>

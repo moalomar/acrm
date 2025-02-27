@@ -1,0 +1,63 @@
+/* By Mohammad Alomar, 27 Feb 2025. */
+@font-face {
+font-display: swap; 
+font-family: 'Calibri'; 
+src: url('Calibri.woff2')}
+
+
+* {
+scrollbar-width: none;
+-ms-overflow-style: none}
+::-webkit-scrollbar {display: none}
+
+
+* {
+margin: 0;
+padding: 0;
+border: none;
+box-sizing: border-box}
+
+
+* {
+line-height: 0;
+font-size: 15px;
+text-align: center;
+font-family: 'Calibri', monospace}
+
+
+table {
+width: 100vw;
+table-layout: fixed;
+border-collapse: collapse}
+
+
+tbody:nth-child(1) * {background-color: white}
+tbody:nth-child(2) * {background-color: #ececec}
+tbody:nth-child(3) * {background-color: #faffee}
+
+
+td {border-top: 1px solid black}
+
+
+td:nth-child(1) {width: 88px}
+td:nth-child(3) {width: 195px}
+td:nth-child(4) {width: 204px}
+td:nth-child(5) {width: 152px}
+
+
+td > * {padding: 10px 20px}
+
+
+td > * {
+max-width: 100%;
+width: fit-content;
+display: inline-block}
+
+
+td > * {
+overflow: hidden;
+white-space: nowrap; 
+text-overflow: ellipsis}
+
+
+option {text-align: left}
